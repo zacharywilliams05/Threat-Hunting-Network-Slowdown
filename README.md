@@ -12,11 +12,7 @@ All traffic originating from within the local network is by default allowed by a
 
 **Goal:** Gather relevant data from logs, network traffic, and endpoints.
 
-Consider inspecting the logs for excessive successful/failed connections from any devices. If discovered, pivot and inspect those devices for any suspicious file or process events.
-
-**Activity:** Ensure data is available from all key sources for analysis.
-
-Ensure the relevant tables contain recent logs:
+Inspect logs for excessive successful/failed connections from any devices. If discovered, pivot and inspect those devices for any suspicious file or process events. We will be using the following tables:
 - `DeviceNetworkEvents`
 - `DeviceFileEvents`
 - `DeviceProcessEvents`
