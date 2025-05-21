@@ -97,5 +97,5 @@ DeviceProcessEvents
 
 ![Screenshot 6 AccountName](https://github.com/user-attachments/assets/27558a24-82d2-4399-af71-0ab939a18e64)
 
-It appears it was launched by the system. This may not always be the case, and in a real-life scenario, we may be able to attribute the script to a user or service account, in which case we can investigate further. Attackers can get the system account to do things, but that investigation is beyond the scope of the lab we are doing. In this case, the other security admins and the team running the device VM-Lab-Andre do not know why this script is here and why it is being executed.
+It appears it was launched by the system. In a real-life scenario, we may be able to attribute the script to a user or service account and investigate further. In this case, the other security admins and the team running the device VM-Lab-Andre do not know why this script is here and why it is being executed.
 
