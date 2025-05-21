@@ -99,3 +99,62 @@ DeviceProcessEvents
 
 It appears it was launched by the system. In a real-life scenario, we may be able to attribute the script to a user or service account and investigate further. In this case, the other security admins and the team running the device VM-Lab-Andre do not know why this script is here and why it is being executed.
 
+# 5. Response
+
+**Goal:** Mitigate any confirmed threats.
+
+**Activity:** Work with security teams to contain, remove, and recover from the threat.
+
+Can anything be done?
+
+___
+![Screenshot 7 quarantineing the device](https://github.com/user-attachments/assets/ab7bd096-2480-44dd-8b2e-25c23e3d6636)
+
+As such, we ran a malware scan which did not show any trace of malware. We quarantined the device and rebuilt it. We would then want to investigate other devices in the logs that may be showing similar activity.
+
+___
+
+# 6. Documentation
+
+**Goal:** Record your findings and learn from them.
+
+**Activity:** Document what you found and use it to improve future hunts and defenses.
+
+Document what you did
+
+___
+
+These notes and screenshots were added to the incident ticket.
+
+___
+
+# 7. Improvement
+
+**Goal:** Improve your security posture or refine your methods for the next hunt.
+
+**Activity:** Adjust strategies and tools based on what worked or didn’t.
+
+Anything we could have done to prevent the thing we hunted for? Any way we could have improved our hunting process?
+
+___
+
+___
+
+## MITRE ATT&CK Framework TTPs:
+
+1. **Tactic: Initial Access**
+   - **Technique: Valid Accounts (T1078)**: If the port scanning was initiated by a legitimate account, it could indicate that an attacker is using valid credentials to gain access.
+
+2. **Tactic: Discovery**
+   - **Technique: Network Service Scanning (T1046)**: The observed behavior of scanning well-known ports on both internal and external IP addresses corresponds to this technique, as it involves identifying services running on networked devices.
+
+3. **Tactic: Execution**
+   - **Technique: PowerShell (T1059.001)**: The execution of a PowerShell script (`portscan.ps1`) to perform the port scan directly corresponds to this technique, as it involves using PowerShell for command execution.
+
+4. **Tactic: Persistence**
+   - **Technique: Scheduled Task/Job (T1053)**: If the script is set to run at specific intervals or conditions, it could indicate a persistence mechanism.
+
+5. **Tactic: Collection**
+   - **Technique: Data from Information Repositories (T1213)**: If the scanning is part of a broader effort to collect information about the network, this technique may apply.
+
+
