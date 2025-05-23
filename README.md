@@ -54,7 +54,7 @@ The KQL query results clearly show a pattern of port scanning. Approximately eve
 
 **Activity:** Dig deeper into detected threats, determine their scope, and escalate if necessary. See if anything you find matches TTPs within the MITRE ATT&CK Framework.
 
-Search the `DeviceFileEvents` and `DeviceProcessEvents` tables around the same time based on your findings in the `DeviceNetworkEvents` tables to see if you can find more evidence for the cause of network slowdowns. You can use ChatGPT to figure this out by pasting/uploading the logs: Scenario 2 - TTPs.
+I will search the `DeviceFileEvents` and `DeviceProcessEvents` tables around the same time based on findings in the `DeviceNetworkEvents` tables to see if I can find more evidence for the cause of network slowdowns.
 
 ___
 
