@@ -46,7 +46,7 @@ DeviceNetworkEvents
 
 ![Screenshot 2 List of RemotePorts being scanned](https://github.com/user-attachments/assets/c513bfd2-b844-4841-947a-dccf8df65a40)
 
-The KQL query results clearly show a pattern of port scanning. Approximately every 3 seconds, "vm-lab-andre" at local IP address 10.0.234 checks a well-known port number, increments to the next well-known port, and tries again. This seems to be happening against both internal and external IP addresses.
+The KQL query results clearly show a pattern of port scanning. Approximately every 3 seconds, "vm-lab-andre" at local IP address 10.0.234 checks a well-known port number, increments to the next well-known port, and tries again. This seems to be happening against both internal and external IP addresses (not shown in screenshot).
 
 # 4. Investigation
 
