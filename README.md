@@ -30,7 +30,7 @@ DeviceNetworkEvents
 
 ![Screenshot 1 Device with most Failed Connections](https://github.com/user-attachments/assets/3aafdb24-3f0f-4887-9457-f602422095ec)
 
-From this, we can see the list of devices with a high number of failed connections, with "vm-lab-andre" being the highest. Let's take a closer look at this device.
+The query produces a list of devices with a high number of failed connections. "vm-lab-andre" has the highest number of failed connections. This is a good place to start looking.
 
 # 3. Data Analysis
 
